@@ -16,3 +16,12 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+storage
+database
+app
+.gitignore
+.env.example
+package.json
+package-lock.json
+phpunit.xml
+vite.config.js

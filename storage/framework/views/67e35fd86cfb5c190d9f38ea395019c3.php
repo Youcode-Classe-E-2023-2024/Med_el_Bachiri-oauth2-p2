@@ -1,6 +1,5 @@
-@extends('layouts.app')
-@section('content')
-    @include('layouts.navbar')
+<?php $__env->startSection('content'); ?>
+    <?php echo $__env->make('layouts.navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
     <div class="w-screen h-screen overflow-hidden relative before:block before:absolute before:bg-black before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30">
         <img src="https://picsum.photos/seed/picsum/1900/850" class="absolute top-0 left-0 min-h-full ob" alt="">
@@ -88,5 +87,7 @@
             </div>
         </div>
     </div>
-    @include('layouts.footer')
-@endsection
+    <?php echo $__env->make('layouts.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\YouCode\Desktop\Med_el_Bachiri-oauth2-p2\resources\views/home.blade.php ENDPATH**/ ?>
